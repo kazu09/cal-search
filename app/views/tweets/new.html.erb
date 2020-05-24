@@ -1,0 +1,12 @@
+<div class="content__title">
+  新規カロリー登録
+</div>
+
+<%= form_with model: @tweet, class: :form, local: true do |form| %>
+  <%= form.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= form.text_field :image, placeholder: :画像を貼り付けてください, class: :form__image %>
+  <%= form.text_area :text, placeholder: :レシピを入力してください, class: :form__text %>
+  <%= form.text_field :data, placeholder: :カロリーを入力してください, class: :form__data %>
+  <div class=cal> kcal </div>
+  <%= form.submit '登録する', class: :form__btn %>
+<% end %>
