@@ -6,7 +6,9 @@
 <% @tweets.each do |tweet| %>
   <div class="content">
     <div class="content__left">
-      <div class="content__left--image"></div>
+      <div class="content__left--image">
+      <%= image_tag tweet.image.to_s %>
+      </div>
     </div>
     <div class="content__right">
       <div class="content__right__top">
