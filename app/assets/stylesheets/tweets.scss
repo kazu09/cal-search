@@ -43,6 +43,17 @@ body{
       height: 60px;
       width: 100%;
       background-color: #fff;
+
+      &__search-input{
+        height: 60px;
+        width: 90%;
+      }
+      &__search-btn{
+        width: 100px;
+        height: 60px;
+        margin-left: 20px;
+        background-color: #FF9933;
+      }
     }
   }
 
@@ -101,6 +112,10 @@ body{
         font-weight: bold;
         padding-top: 30px;
         text-align: center;
+        .error{
+          color: red;
+          text-align: center;
+        }
       }
     }
 
@@ -195,13 +210,13 @@ body{
 
     &__data{
       display: block;
-      width: 27%;
+      width: 35%;
       height: 50px;
       margin-top: 15px;
       text-align: left;
     }
     .cal{
-      margin-left: 220px ;
+      margin-left: 350px ;
       margin-top:-50px;
       font-weight: bold;
       font-size: 30px;
@@ -218,3 +233,4 @@ body{
     padding: 15px 30px;
   }
 }
+  

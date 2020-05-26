@@ -1,13 +1,16 @@
 <div class="content__title">
   新規カロリー登録
+  <% if @tweet.errors.any? %>
+   <p class="error" >入力ミスです。確認してください！</p>
+  <% end %>
 </div>
 
 <%= form_with model: @tweet, class: :form, local: true do |form| %>
-  <%= form.text_field :title, placeholder: :タイトルを入力してください, class: :form__title %>
-  <%= form.label :画像を選択してください %>
+  <%= form.text_field :title, placeholder: :タイトルを入力してください（20文字以内必須）, class: :form__title %>
+  <%= form.label :画像を選択してください（必須） %>
   <%= form.file_field :image,  class: :form__image %>
-  <%= form.text_area :text, placeholder: :レシピがあれば入力してください, class: :form__text,rows: 9 %>
-  <%= form.text_field :data, placeholder: :カロリーを入力してください, class: :form__data %>
+  <%= form.text_area :text, placeholder: :レシピがあれば入力してください（任意）, class: :form__text,rows: 9 %>
+  <%= form.text_field :data, placeholder: :カロリーを整数で入力してください（半角必須）, class: :form__data %>
   <div class=cal> kcal </div>
   <%= form.submit '登録する', class: :form__btn %>
 <% end %>
