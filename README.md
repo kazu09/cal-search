@@ -31,3 +31,28 @@ Things you may want to cover:
 |image|string|
 |text|string|
 |data|integer|null: false|
+
+## usersテーブル
+
+|Column|Type|Options|Options|Options|
+|------|----|-------|-------|-------|
+|name|string|null: false|index:true|
+|password|string|null: false|
+|email|string|null:false|unique: true|index:true|
+|reset_password_token|string|
+
+### Association
+- has_many :posts
+
+## postsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|morning|integer|null: false|
+|lunch|integer|null: false|
+|dinner|integer|null: false|
+|day|date|null: false|
+|user_id|references|
+
+### Association
+- belongs_to :user

@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+  <div class="content">
+    <div class="content__day">
+      <div class="content__day__top">
+        <%= link_to post.day, post_path(post.id), class: "content__right__top--title" %>
+        のデータ
+      </div>
+      
+    </div>
+  </div>
+<% end %>

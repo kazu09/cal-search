@@ -1,9 +1,16 @@
 <div class="message">
   <div class="comment">
+  <%# js非対応のsearch機能 %>
   <%= form_with(url: search_tweets_path, local: true, method: :get, class: "comment__search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "食材名かカロリー数値を入力してください", class: "comment__search-input" %>
   <%= form.submit "検索", class: "comment__search-btn" %>
   <% end %>
+   <%# js対応のsearch機能 %>
+  <%# <%= form_with(url: search_tweets_path, local: true, method: :get, class: "comment__search-form") do |form| %>
+  <%# <%= form.text_field :keyword, placeholder: "食材名かカロリー数値を入力してください", class: "comment__search-input" %> 
+  <%# <%= form.submit "検索", class: "comment__search-btn" %> 
+  <%# <% end %> 
+
   </div>
 </div>
 <%# <div class="contents">  %>
@@ -11,7 +18,7 @@
   <div class="content">
     <div class="content__left">
       <div class="content__left--image">
-      <%= image_tag tweet.image.to_s %>
+        <%= image_tag tweet.image.to_s %>
       </div>
     </div>
     <div class="content__right">
@@ -26,4 +33,7 @@
       </div>
     </div>
   </div>
+   
 <% end %>
+<%= paginate(@tweets) %>
+

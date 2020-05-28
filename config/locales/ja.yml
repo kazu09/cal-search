@@ -1,0 +1,10 @@
+# gem 'kaminari'使用
+
+ja:
+  views:
+      pagination:
+        first: '<最初'
+        last: '>最後'
+        previous: '<前に戻る'
+        next: '>次に進む'
+        truncate: '...'

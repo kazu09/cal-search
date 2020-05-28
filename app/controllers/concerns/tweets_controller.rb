@@ -2,6 +2,8 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = Tweet.all
+    # ページネーションの実装
+    @tweets = Tweet.order("created_at DESC").page(params[:page]).per(6)
   end
 
   def new
@@ -10,6 +12,7 @@ class TweetsController < ApplicationController
 
   def create
     @tweet = Tweet.create(tweet_params)
+    # 入力確認の分岐（newページ)
     if @tweet.save
       redirect_to root_path
     else
@@ -27,6 +30,7 @@ class TweetsController < ApplicationController
 
   def update
     @tweet = Tweet.find(params[:id])
+    # 入力確認の分岐（editページ)
     if @tweet.update(tweet_params)
       redirect_to tweet_path(@tweet.id)
     else
@@ -41,7 +45,17 @@ class TweetsController < ApplicationController
   end
 
   def search
+    # 検索機能実装
     @tweets = Tweet.search(params[:keyword])
+    # ページネーションの実装
+    @tweets = @tweets.page(params[:page]).per(6)
+
+    # インクリメンタルサーチ実装予定なし
+    # respond_to do |format|
+    #   format.html
+    #   format.json
+    # end
+
   end
 
   private

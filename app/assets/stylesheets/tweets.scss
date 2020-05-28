@@ -9,6 +9,8 @@ body{
   // min-width: 650px;
   // -------------------
 
+  // application.thml.erb全て共通（header部分)
+
   .header{
     height: 56px;
     width: 100%;
@@ -47,6 +49,7 @@ body{
       &__search-input{
         height: 60px;
         width: 90%;
+        font-size:20px;
       }
       &__search-btn{
         width: 100px;
@@ -67,7 +70,7 @@ body{
     
   // ------------------------
 
-  // indexaction HTML
+  // tweet(共用部) indexaction HTML
 
     .content{
       padding: 10px;
@@ -119,11 +122,12 @@ body{
       }
     }
 
-    // showaction HTML
+    // tweet(共用部) showaction HTML
+    // .postTitleは全てのタイトル部分共通使用（マイページ、共通部分）
 
     .postTitle{
       padding-top: 20px;
-      padding-bottom: 40px;
+      padding-bottom: 50px;
       text-align: center;
       font-size: 50px;
       font-weight: bold;
@@ -161,18 +165,18 @@ body{
       &__edit{
         display: block;
         border-radius: 5px;
-        color: #ffffff;
-        background-color:#55c500;
-        padding: 0 10px;
+        color: #000;
+        background-color:yellow;
+        padding: 0 50px;
         text-decoration: none;
         margin-right: 10px;
       }
       &__delete{
         display: block;
         border-radius: 5px;
-        color: #ffffff;
-        background-color:#55c500;
-        padding: 0 10px;
+        color: #000;
+        background-color:yellow;
+        padding: 0 50px;
         text-decoration: none;
         margin-left: 10px;
       }
@@ -180,7 +184,7 @@ body{
     
   }
 
-  // newaction HTML
+  // tweet(共用部) newaction HTML
 
   .form{
     width: 85%;
@@ -232,5 +236,10 @@ body{
   .user{
     padding: 15px 30px;
   }
+
+  a{
+    text-decoration: none;
+  }
 }
+
   

@@ -1,0 +1,24 @@
+<div class="content__title">
+  データの編集
+  <% if @post.errors.any? %>
+   <p class="error" >入力ミスです。確認してください！</p>
+  <% end %>
+</div>
+<div class=daytitle>日付を入力してください　記述例：2020/1/1（必須）</div>
+<%= form_with model: @post, class: :form, local: true do |form| %>
+  <%= form.text_field :day, placeholder: :日付の入力を行ってください（半角）, class: :form__title %>
+
+  <div class=calcomment>朝の摂取カロリーを入力してください（必須）</div>
+  <%= form.text_field :morning, placeholder: :整数でカロリーの入力を行ってください（半角）, class: :calinput %>
+  <div class=comment>Kcal</div>
+
+  <div class=calcomment>昼の摂取カロリーを入力してください（必須）</div>
+  <%= form.text_field :lunch, placeholder: :整数でカロリーの入力を行ってください（半角）, class: :calinput %>
+  <div class=comment>Kcal</div>
+
+  <div class=calcomment>夜の摂取カロリーを入力してください（必須）</div>
+  <%= form.text_field :dinner, placeholder: :整数でカロリーの入力を行ってください（半角）, class: :calinput %>
+  <div class=comment>Kcal</div>
+  
+  <%= form.submit '登録する', class: :form__btn %>
+<% end %>
