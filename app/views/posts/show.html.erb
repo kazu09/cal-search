@@ -1,0 +1,42 @@
+<div class="postTitle">
+  <%= @post.day %>結果
+</div>
+
+<div class=calmor>
+朝の摂取カロリー
+  <div class="calmor__calresult1">
+    <%= @post.morning %>
+    Kcal
+  </div>
+</div>
+
+<div class=callun>
+昼の摂取カロリー
+  <div class="callun__calresult2">
+    <%= @post.lunch %>
+    Kcal
+  </div>
+</div>
+
+<div class=caldin>
+夜の摂取カロリー
+  <div class="caldin__calresult3">
+    <%= @post.dinner %>
+    Kcal
+  </div>
+</div>
+
+<div class = caltotal>
+1日の摂取カロリー合計
+  <div class="caltotal__calanswer">
+    <%= @post.morning + @post.lunch + @post.dinner %> 
+    Kcal
+  </div>
+</div>
+
+<%# 編集ボタン %>
+<%# ビューtweets.scss参照 %>
+<div class="postManage">
+  <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
+  <%= link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete" %>
+</div>
