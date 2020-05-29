@@ -36,11 +36,13 @@ body{
       }
     }
   }
+
   .message{
     height: 100px;
     width: 100%;
     display:flex;
-    background-image: url(back-ground.jpg);
+    margin-top:20px;
+    margin-left:20px;
     .comment{
       height: 60px;
       width: 100%;
