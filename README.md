@@ -1,5 +1,5 @@
 # README
-<h1 align="center">cal-search</h1>
+<h1 align="center">Cal-Search</h1>
 
 - カロリー投稿及びカロリー管理アプリです。
 - TECH::CAMP 個人アプリ制作
