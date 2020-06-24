@@ -37,7 +37,7 @@
 - ログイン時でもトップページカロリー投稿機能
 
 ## サイトURL紹介
-- IPアドレス:https://cal-search.herokuapp.com/
+- URL:https://cal-search.herokuapp.com/
 
 # DB設計
 
