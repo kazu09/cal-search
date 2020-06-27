@@ -1,0 +1,53 @@
+// POST(マイページ)、edit.html.erb,new.html.erb共通scss
+
+// .postform{
+//   width: 85%;
+//   height: 100%;
+//   margin: 0 auto;
+//   padding-top: 30px;
+// }
+
+.daytitle{
+  color: red;
+}
+
+.formday{
+  width: 670px;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  }
+ 
+  .comment{
+    font-size:30px;
+    font-weight: bold;
+    display:flex;
+    .field_with_errors{
+      .calinput{
+        width: 500px;
+        height: 50px;
+        text-align: center;
+        margin-top:20px;
+        font-size:15px;
+      }
+    }
+    .caltext{
+      padding:20px;
+    }
+    .calinput{
+      width: 500px;
+      height: 50px;
+      text-align: center;
+      margin-top:20px;
+      font-size:15px;
+    }
+  }
+  
+
+.calcomment{
+  padding-top:40px;
+  color:red;
+  // display:flex;
+}
+
+

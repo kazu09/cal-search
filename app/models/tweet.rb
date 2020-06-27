@@ -13,7 +13,7 @@ class Tweet < ApplicationRecord
 
   # textカラムの文字制限
   validates :text,
-  length: { maximum: 80 }
+  length: { maximum: 450 }
 
   # dataカラムの数字のみの制限
   validates :data,
