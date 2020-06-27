@@ -1,0 +1,19 @@
+
+// users(マイページ)users.html.erbのscssファイル
+.content{
+  padding: 10px;
+  border-bottom: 1px solid #f6f6f6;
+  display: flex;
+  &__day{
+    width: calc(100%-100px);
+    &__top{
+      font-size: 30px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+
+
+
+

@@ -1,11 +1,14 @@
-<% @posts.each do |post| %>
-  <div class="content">
-    <div class="content__day">
-      <div class="content__day__top">
-        <%= link_to post.day, post_path(post.id), class: "content__right__top--title" %>
-        のデータ
+<div class="contents">
+  <% @posts.each do |post| %>
+  <%=link_to post_path(post.id) do %>
+    <div class="content">
+      <div class="content__day">
+        <div class="content__day__top">
+          <%= post.day.strftime('%Y年%m月%d日') %>
+          結果
+        </div>
       </div>
-      
     </div>
-  </div>
-<% end %>
+  <% end %>
+  <% end %>
+</div>

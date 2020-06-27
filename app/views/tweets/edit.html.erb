@@ -1,17 +1,22 @@
-<div class="content__title">
-  投稿済みカロリーの編集
-  <% if @tweet.errors.any? %>
-   <p class="error" >入力ミスです。確認してください！</p>
+<div class="formcontent">
+  <div class="formcontent__title">
+    投稿済みのカロリー編集
+    <% if @tweet.errors.any? %>
+    <p class="error" >入力ミスです。確認してください！</p>
+    <% end %>
+  </div>
+
+  <%= form_with model: @tweet, class: :form, local: true do |form| %>
+    <%= form.label :食品名を入力してください（必須）,class: :form__titlelabel %>
+    <%= form.text_field :title, placeholder: :タイトルを入力してください（20文字以内必須）, class: :form__title %>
+    <%= form.label :画像を選択してください（必須）,class: :form__imagelabel %>
+    <%= form.file_field :image,  class: :form__image %>
+    <%= form.label :コメントを入力してください（任意）,class: :form__textlabel %>
+    <%= form.text_area :text ,placeholder: :コメントがあれば入力してください（450文字以内）, class: :form__text,rows:7 , cols:50 %>
+    <%= form.label :カロリーを入力してください（必須）,class: :form__datalabel %>
+    <%= form.text_field :data, placeholder: :整数で入力してください（半角）, class: :form__data %>
+    <div class=cal> kcal </div>
+    <%= form.submit '登録する', class: :form__btn %>
   <% end %>
 </div>
-
-<%= form_with model: @tweet, class: :form, local: true do |form| %>
-  <%= form.text_field :title, placeholder: :タイトルを入力してください（必須）, class: :form__title %>
-  <%= form.label :画像を選択してください（必須） %>
-  <%= form.file_field :image,  class: :form__image %>
-  <%= form.text_area :text, placeholder: :材料があれば入力してください（80文字以内任意）, class: :form__text,rows: 9 %>
-  <%= form.text_field :data, placeholder: :カロリーを入力してください（半角必須）, class: :form__data %>
-  <div class=cal> kcal </div>
-  <%= form.submit '登録する', class: :form__btn %>
-<% end %>
 
