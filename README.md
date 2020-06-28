@@ -8,10 +8,10 @@
 # アプリ紹介
 ## トップページ
 ![toppage-image](https://user-images.githubusercontent.com/64839248/85937509-26028900-b93f-11ea-83aa-6c89c9adffe1.png)
-![toppage-details-image](https://user-images.githubusercontent.com/64839248/85937542-74b02300-b93f-11ea-85b8-3eacef0349cb.png)
+![toppage-details-image](https://user-images.githubusercontent.com/64839248/85938122-10905d80-b945-11ea-945b-40563c500817.png)
 ## マイページ
 ![mypage-image](https://user-images.githubusercontent.com/64839248/85937576-bb058200-b93f-11ea-8bc7-6e78d8d07df0.png)
-![mypage-details-image](https://user-images.githubusercontent.com/64839248/85937611-1df71900-b940-11ea-92c6-795ac2cb086f.png)
+![mypage-details-image](https://user-images.githubusercontent.com/64839248/85938143-49c8cd80-b945-11ea-88ee-3e9e0a45979e.png)
 
 ## :paperclip: 主な使用言語
 ### Ruby
