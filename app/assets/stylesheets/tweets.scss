@@ -100,7 +100,7 @@ body{
       text-align: right;
       height: 400px;
       font-size: 20px;
-      width:600px;
+      width:400px;
       border: solid 1px;
       background-color:#CCFFFF;
 
@@ -118,12 +118,10 @@ body{
   }
     
     .postDate{
-      font-size: 15px;
-      text-align: right;
       font-weight: bold;
-      font-size: 50px;
+      font-size: 40px;
       margin-right: 100px;
-      margin-left: 1000px;
+      margin-left: 800px;
       margin-top: 10px;
       &__date{
         background-color:#CCFFCC;
