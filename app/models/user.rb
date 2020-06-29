@@ -8,6 +8,8 @@ class User < ApplicationRecord
   validates :nickname , presence: true
   # メールアドレスのバリデーション
   validates :email, {presence: true}
-  validates :email, format: { with:/\A\S+@\S+\.\S+\z/}
-  validates :password, format: { with:/\A[0-9]+\z/}
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, uniqueness: true, format: { with: VALID_EMAIL_REGEX }
+  VALID_PASSWORD_REGEX = /\A[a-z0-9]+\z/i
+validates :password, format: { with: VALID_PASSWORD_REGEX }
 end
