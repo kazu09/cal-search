@@ -8,7 +8,7 @@
 # アプリ紹介
 ## トップページ
 ![toppage-image](https://user-images.githubusercontent.com/64839248/85937509-26028900-b93f-11ea-83aa-6c89c9adffe1.png)
-![toppage-details-image](https://user-images.githubusercontent.com/64839248/86224903-6f173f00-bbc4-11ea-9334-1b617711d3ab.png)
+![toppage-details-image](https://user-images.githubusercontent.com/64839248/86226742-0b424580-bbc7-11ea-8950-e27264ebf924.png)
 ## マイページ
 ![mypage-image](https://user-images.githubusercontent.com/64839248/85937576-bb058200-b93f-11ea-8bc7-6e78d8d07df0.png)
 ![mypage-details-image](https://user-images.githubusercontent.com/64839248/85938143-49c8cd80-b945-11ea-88ee-3e9e0a45979e.png)
