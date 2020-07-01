@@ -37,7 +37,7 @@
 
 ## サイトURL紹介
 - URL:https://cal-search.herokuapp.com/
-
+<p>AWSのS3など使用していないので画像投稿はできますが時間が経過すると消えてしまいます。</p>
 # DB設計
 
 ## tweetsテーブル
